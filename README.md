@@ -17,7 +17,7 @@
 
 ## Milestone 2:
 - [x] Trasformiamo la stringa statica della lingua in una vera e propria bandiera della nazione corrispondente, gestendo il caso in cui non abbiamo la bandiera della nazione ritornata dall’API (le flag non ci sono in FontAwesome).
-- [ ] Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca dovremo prendere sia i film che corrispondono alla query, sia le serie tv, stando attenti ad avere alla fine dei valori simili (le serie e i film hanno campi nel JSON di risposta diversi, simili ma non sempre identici)
+- [x] Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca dovremo prendere sia i film che corrispondono alla query, sia le serie tv, stando attenti ad avere alla fine dei valori simili (le serie e i film hanno campi nel JSON di risposta diversi, simili ma non sempre identici)
     - Qui un esempio di chiamata per le serie tv: https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=scrubs
 
 ## Milestone 3:
@@ -69,7 +69,7 @@
 
 ## Milestone 2:
 - [x] Transform the static language string into an actual flag of the corresponding nation, handling the case where we don't have the flag of the nation returned by the API (flags are not available in FontAwesome).
-- [ ] Then, broaden the search to TV series as well. With the same search action, we should retrieve both the movies and TV series corresponding to the query, being careful to have similar values in the end (TV series and movies have different fields in the JSON response, similar but not always identical).
+- [x] Then, broaden the search to TV series as well. With the same search action, we should retrieve both the movies and TV series corresponding to the query, being careful to have similar values in the end (TV series and movies have different fields in the JSON response, similar but not always identical).
     - Here's an example call for TV series: https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=scrubs
 
 ## Milestone 3:
