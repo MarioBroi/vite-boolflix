@@ -5,7 +5,12 @@ export default {
 </script>
 
 <template>
-    <div>Test AppHeader</div>
+    <div class="app-header">
+        <h1>BOOLFLIX</h1>
+        <input type="text" placeholder="Titoli, persone, generi">
+        <button>Cerca</button>
+    </div>
+    <!-- /.app-header -->
 </template>
 
 <style></style>
