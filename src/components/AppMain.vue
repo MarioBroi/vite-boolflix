@@ -1,30 +1,36 @@
 <script>
-import axios from 'axios';
+import { state } from '../state.js';
 
 export default {
     name: 'AppMain',
     data() {
         return {
-            movies: [],
+            state,
         }
-    },
-    mounted() {
-        axios
-            .get('https://api.themoviedb.org/3/search/movie?api_key=47b34ae23c4e60d6afdad289e2835a01&query=ritorno%20al%20futuro&include_adult=false&language=en-US&page=1')
-            .then(resp => {
-                console.log(resp.data.results);
-                this.movies = resp.data.results;
-            })
     },
 }
 
 </script>
 
 <template>
-    <div v-for="movie in movies" class="app-main">
-        <div>{{ movie.title }}</div>
-    </div>
+
+    <main class="app-main">
+
+        <!-- <div>Test main</div> -->
+
+        <div v-if="state.moviesResult.length > 0">
+            <ul v-for="movie in state.moviesResult" :key="movie.id">
+                <li>Titolo: {{ movie.title }}</li>
+                <li>Titolo originale: {{ movie.original_title }}</li>
+                <li>Lingua: {{ movie.original_language }}</li>
+                <li>Voto: {{ movie.vote_average }}</li>
+            </ul>
+
+        </div>
+
+    </main>
     <!-- /.app-main -->
+
 </template>
 
 <style></style>
