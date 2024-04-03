@@ -5,11 +5,11 @@
 - Per fare questo, come fanno siti molto più rinomati, utilizzeremo un API che ci permette di avere un insieme di risultati congrui alla nostra ricerca.
 
 ## Milestone 0:
-- [ ] Progettare la struttura del global state sulla linea degli esercizi svolti nei giorni precedenti.
+- [x] Progettare la struttura del global state sulla linea degli esercizi svolti nei giorni precedenti.
 
 ## Milestone 1:
-- Creare un layout base con una searchbar (una input e un button) in cui possiamo scrivere completamente o parzialmente il nome di un film. Possiamo, cliccando il bottone, cercare sull’API tutti i film che contengono ciò che ha scritto l’utente.
-- Vogliamo dopo la risposta dell’API visualizzare a schermo i seguenti valori per ogni film trovato:
+- [ ] Creare un layout base con una searchbar (una input e un button) in cui possiamo scrivere completamente o parzialmente il nome di un film. Possiamo, cliccando il bottone, cercare sull’API tutti i film che contengono ciò che ha scritto l’utente.
+- [ ] Vogliamo dopo la risposta dell’API visualizzare a schermo i seguenti valori per ogni film trovato:
     1. Titolo
     2. Titolo Originale
     3. Lingua
@@ -57,11 +57,11 @@
 - To do this, like many renowned sites, we will use an API that allows us to obtain a set of results consistent with our search.
 
 ## Milestone 0:
-- [ ] Design the structure of the global state along the lines of the exercises done in the previous days.
+- [x] Design the structure of the global state along the lines of the exercises done in the previous days.
 
 ## Milestone 1:
-- Create a basic layout with a search bar (an input and a button) where we can write either completely or partially the name of a movie. By clicking the button, we can search the API for all the movies that contain what the user has written.
-- After receiving the API response, we want to display the following values on the screen for each found movie:
+- [] Create a basic layout with a search bar (an input and a button) where we can write either completely or partially the name of a movie. By clicking the button, we can search the API for all the movies that contain what the user has written.
+- [] After receiving the API response, we want to display the following values on the screen for each found movie:
     1. Title
     2. Original Title
     3. Language
