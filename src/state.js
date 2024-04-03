@@ -25,6 +25,7 @@ export const state = reactive({
                         lenguage: movie.original_language,
                         vote: movie.vote_average,
                         category: "Movie",
+                        image: movie.poster_path,
                     })
                 })
                 console.log(this.results);
@@ -43,7 +44,8 @@ export const state = reactive({
                         originaTitle: tv.original_name,
                         lenguage: tv.original_language,
                         vote: tv.vote_average,
-                        category: "TvShow"
+                        category: "TvShow",
+                        image: tv.poster_path,
                     })
                 })
                 console.log(this.results);

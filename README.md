@@ -21,11 +21,11 @@
     - Qui un esempio di chiamata per le serie tv: https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=scrubs
 
 ## Milestone 3:
-- In questa milestone come prima cosa aggiungiamo la copertina del film o della serie al nostro elenco. Ci viene passata dall’API solo la parte finale dell’URL, questo perché poi potremo generare da quella porzione di URL tante dimensioni diverse.
-- Dovremo prendere quindi l’URL base delle immagini di TMDB: https://image.tmdb.org/t/p/ per poi aggiungere la dimensione che vogliamo generare (troviamo tutte le dimensioni possibili a questo link: https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400) per poi aggiungere la parte finale dell’URL passata dall’API.
+- [x] In questa milestone come prima cosa aggiungiamo la copertina del film o della serie al nostro elenco. Ci viene passata dall’API solo la parte finale dell’URL, questo perché poi potremo generare da quella porzione di URL tante dimensioni diverse.
+- [x] Dovremo prendere quindi l’URL base delle immagini di TMDB: https://image.tmdb.org/t/p/ per poi aggiungere la dimensione che vogliamo generare (troviamo tutte le dimensioni possibili a questo link: https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400) per poi aggiungere la parte finale dell’URL passata dall’API.
     - Esempio di URL: https://image.tmdb.org/t/p/w342/wwemzKWzjKYJFfCeiB57q3r4Bcm.png
-- Trasformiamo poi il voto da 1 a 10 decimale in un numero intero da 1 a 5, così da permetterci di stampare a schermo un numero di stelle piene che vanno da 1 a 5, lasciando le restanti vuote (troviamo le icone in FontAwesome).
-- Arrotondiamo sempre per eccesso all’unità successiva, non gestiamo icone mezze piene (o mezze vuote :P)
+- [x] Trasformiamo poi il voto da 1 a 10 decimale in un numero intero da 1 a 5, così da permetterci di stampare a schermo un numero di stelle piene che vanno da 1 a 5, lasciando le restanti vuote (troviamo le icone in FontAwesome).
+- [x] Arrotondiamo sempre per eccesso all’unità successiva, non gestiamo icone mezze piene (o mezze vuote :P)
 
 ## Milestone 4:
 - Trasformiamo quello che abbiamo fatto fino ad ora in una vera e propria webapp, creando un layout completo simil-Netflix:
@@ -73,11 +73,11 @@
     - Here's an example call for TV series: https://api.themoviedb.org/3/search/tv?api_key=e99307154c6dfb0b4750f6603256716d&language=it_IT&query=scrubs
 
 ## Milestone 3:
-- In this milestone, first, we add the cover of the movie or TV series to our list. It's passed to us by the API only as the final part of the URL, because then we can generate from that portion of the URL many different sizes.
-- We'll then take the base URL of the TMDB images: https://image.tmdb.org/t/p/ and append the size we want to generate (we can find all possible sizes at this link: https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400) and finally append the part of the URL passed by the API.
+- [x] In this milestone, first, we add the cover of the movie or TV series to our list. It's passed to us by the API only as the final part of the URL, because then we can generate from that portion of the URL many different sizes.
+- [x] We'll then take the base URL of the TMDB images: https://image.tmdb.org/t/p/ and append the size we want to generate (we can find all possible sizes at this link: https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400) and finally append the part of the URL passed by the API.
     - Example URL: https://image.tmdb.org/t/p/w342/wwemzKWzjKYJFfCeiB57q3r4Bcm.png
-- Then, we transform the rating from a decimal from 1 to 10 into an integer from 1 to 5, so that we can display a number of full stars on the screen ranging from 1 to 5, leaving the remaining stars empty (we find the icons in FontAwesome).
-- We always round up to the next integer, we don't handle half-full (or half-empty :P) icons.
+- [x] Then, we transform the rating from a decimal from 1 to 10 into an integer from 1 to 5, so that we can display a number of full stars on the screen ranging from 1 to 5, leaving the remaining stars empty (we find the icons in FontAwesome).
+- [x] We always round up to the next integer, we don't handle half-full (or half-empty :P) icons.
 
 ## Milestone 4:
 - Transform what we've done so far into a real web app, creating a complete layout similar to Netflix:
