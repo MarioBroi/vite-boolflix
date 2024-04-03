@@ -23,7 +23,7 @@ export default {
             <ul v-for="movie in state.moviesResult" :key="movie.id">
                 <li>Titolo: {{ movie.title }}</li>
                 <li>Titolo originale: {{ movie.original_title }}</li>
-                <li>Lingua: {{ movie.original_language }}
+                <li>Lingua: 
                     <span
                         v-if="movie.original_language != `en` && movie.original_language != `zh` && movie.original_language != `ja` && movie.original_language != `kk` && movie.original_language != `da` && movie.original_language != `ko`"
                         :class="`fi fi-${movie.original_language}`"></span>
@@ -33,7 +33,8 @@ export default {
                     <span v-else-if="movie.original_language == `kk`" class="fi fi-kz"></span>
                     <span v-else-if="movie.original_language == `da`" class="fi fi-dk"></span>
                     <span v-else-if="movie.original_language == `ko`" class="fi fi-kp"></span>
-                    <span v-else></span>
+                    <span v-else-if="movie.original_language == null">{{ movie.original_language }}</span>
+                    
                 </li>
                 <li>Voto: {{ movie.vote_average }}</li>
             </ul>
