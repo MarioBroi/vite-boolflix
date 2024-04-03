@@ -19,26 +19,29 @@ export default {
 
         <!-- <div>Test main</div> -->
 
-        <div v-if="state.moviesResult.length > 0">
-            <ul v-for="movie in state.moviesResult" :key="movie.id">
-                <li>Titolo: {{ movie.title }}</li>
-                <li>Titolo originale: {{ movie.original_title }}</li>
-                <li>Lingua: 
-                    <span
-                        v-if="movie.original_language != `en` && movie.original_language != `zh` && movie.original_language != `ja` && movie.original_language != `kk` && movie.original_language != `da` && movie.original_language != `ko`"
-                        :class="`fi fi-${movie.original_language}`"></span>
-                    <span v-else-if="movie.original_language == `en`" class="fi fi-gb"></span>
-                    <span v-else-if="movie.original_language == `zh`" class="fi fi-cn"></span>
-                    <span v-else-if="movie.original_language == `ja`" class="fi fi-jp"></span>
-                    <span v-else-if="movie.original_language == `kk`" class="fi fi-kz"></span>
-                    <span v-else-if="movie.original_language == `da`" class="fi fi-dk"></span>
-                    <span v-else-if="movie.original_language == `ko`" class="fi fi-kp"></span>
-                    <span v-else-if="movie.original_language == null">{{ movie.original_language }}</span>
-                    
-                </li>
-                <li>Voto: {{ movie.vote_average }}</li>
-            </ul>
+        <div v-if="state.results.length > 0">
+            <div v-for="result in state.results" :key="result.id">
 
+                <ul >
+
+                    <li>Titolo: {{ result.title }}</li>
+                    <li>Titolo originale: {{ result.originaTitle }}</li>
+                    <li>Lingua:
+                        <span
+                            v-if="result.lenguage != `en` && result.lenguage != `zh` && result.lenguage != `ja` && result.lenguage != `kk` && result.lenguage != `da` && result.lenguage != `ko`"
+                            :class="`fi fi-${result.lenguage}`"></span>
+                        <span v-else-if="result.lenguage == `en`" class="fi fi-gb"></span>
+                        <span v-else-if="result.lenguage == `zh`" class="fi fi-cn"></span>
+                        <span v-else-if="result.lenguage == `ja`" class="fi fi-jp"></span>
+                        <span v-else-if="result.lenguage == `kk`" class="fi fi-kz"></span>
+                        <span v-else-if="result.lenguage == `da`" class="fi fi-dk"></span>
+                        <span v-else-if="result.lenguage == `ko`" class="fi fi-kp"></span>
+                        <span v-else-if="result.lenguage == null">{{ result.lenguage }}</span>
+                    </li>
+                    <li>Categoria: {{ result.category }}</li>
+                    <li>Voto: {{ result.vote }}</li>
+                </ul>
+            </div>
         </div>
 
     </main>

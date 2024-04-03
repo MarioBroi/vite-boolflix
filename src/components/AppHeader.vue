@@ -8,11 +8,6 @@ export default {
             state,
         }
     },
-    method: {
-        search() {
-            state.searchMovie();
-        }
-    }
 }
 </script>
 
@@ -23,7 +18,7 @@ export default {
         <h1>BOOLFLIX</h1>
 
         <input type="text" placeholder="Titoli, persone, generi" v-model="state.search">
-        <button @click="state.searchMovie">Search</button>
+        <button @click="state.searchResult">Search</button>
 
     </header>
     <!-- /.app-header -->
