@@ -39,7 +39,7 @@
 3. Ricordatevi quanto imparato finora con le diverse esercitazioni: ○ Affrontate sempre prima il caso base minimo, senza complicazioni (ad es. “Se il titolo originale è uguale al titolo, magari dovrei nasconderlo”, “Se faccio una ricerca che non ha nessun risultato dovrei scrivere qualcosa” sono domande da NON FARSI fino a quando non si è fatto completamente un caso base) ○ Se ti viene volta di copiare/incollare codice, NON FARLO, fai una funzione! Quei pochi minuti risparmiati renderanno il tuo codice meno leggibile ed ogni volta che dovrai intervenire su quella parte perderai molto più tempo ○ Prima di andare avanti, assicurati di aver risolto quella parte nel miglior modo possibile (codice non ripetuto, minimo codice possibile, funzioni chiare e riutilizzabili). Risparmierai tantissimo tempo risolvendo gli esercizi successivi ○ Meglio risolvere una milestone in meno, ma con codice scritto bene
 4. Per avere la lista delle lingue utilizzare: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
-# SE HAI FINITO LE MILESTONE PRECEDENTI E VUOI ANDARE OLTRE, PUOI FARE LE MILESTONE SUCCESSIVE, MA SONO FACOLTATIVE:
+## SE HAI FINITO LE MILESTONE PRECEDENTI E VUOI ANDARE OLTRE, PUOI FARE LE MILESTONE SUCCESSIVE, MA SONO FACOLTATIVE:
 
 ## Milestone 5 (Opzionale):
 - Partendo da un film o da una serie, richiedere all'API quali sono gli attori che fanno parte del cast aggiungendo alla nostra scheda Film / Serie SOLO i primi 5 restituiti dall’API con Nome e Cognome, e i generi associati al film con questo schema:
@@ -47,6 +47,8 @@
 
 ## Milestone 6 (Opzionale):
 - Creare una lista di generi richiedendo quelli disponibili all'API e creare dei filtri con i generi tv e movie per mostrare/nascondere le schede ottenute con la ricerca.
+
+
  
 # /// **ENGLISH** ///
 
@@ -89,7 +91,7 @@
 3. Remember what you've learned so far with the different exercises: ○ Always tackle the simplest base case first, without complications (e.g., "If the original title is the same as the title, maybe I should hide it", "If I make a search that has no results I should write something" are questions NOT TO ASK until you have completely solved a base case) ○ If you're tempted to copy/paste code, DON'T DO IT, make a function! Those few minutes saved will make your code less readable and every time you have to work on that part, you'll lose much more time ○ Before moving on, make sure you've solved that part in the best possible way (no repeated code, minimal code, clear and reusable functions). You'll save a lot of time solving the next exercises ○ It's better to solve one milestone less, but with well-written code
 4. To get the list of languages, use: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
-# IF YOU'VE FINISHED THE PREVIOUS MILESTONES AND WANT TO GO FURTHER, YOU CAN DO THE NEXT MILESTONES, BUT THEY'RE OPTIONAL:
+## IF YOU'VE FINISHED THE PREVIOUS MILESTONES AND WANT TO GO FURTHER, YOU CAN DO THE NEXT MILESTONES, BUT THEY'RE OPTIONAL:
 
 ## Milestone 5 (Optional):
 - Starting from a movie or a series, request from the API which actors are part of the cast by adding to our Movie / Series card ONLY the first 5 returned by the API with First Name and Last Name, and the genres associated with the movie with this scheme:
