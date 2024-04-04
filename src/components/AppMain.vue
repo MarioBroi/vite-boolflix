@@ -7,6 +7,7 @@ export default {
     data() {
         return {
             state,
+            mouseOver: false,
         }
     },
     methods: {
@@ -29,39 +30,42 @@ export default {
 
                     <div v-for="result in state.results" :key="result.id" class="card">
 
+                        <div class="image" v-if="mouseOver === false" @mouseover="mouseOver = true">
                             <img v-if="result.image" :src="'https://image.tmdb.org/t/p/w342/' + result.image"
-                                alt="movie poster" class="poster-img">
+                                alt="movie poster">
+                        </div>
+                        <!-- /.image -->
 
-                            <div class="card-content">
+                        <div class="card-content">
 
-                                <ul>
-                                    <li>Titolo: {{ result.title }}</li>
-                                    <li>Titolo originale: {{ result.originaTitle }}</li>
-                                    <li>Lingua:
-                                        <span
-                                            v-if="result.lenguage != `en` && result.lenguage != `zh` && result.lenguage != `ja` && result.lenguage != `kk` && result.lenguage != `da` && result.lenguage != `ko`"
-                                            :class="`fi fi-${result.lenguage}`"></span>
-                                        <span v-else-if="result.lenguage == `en`" class="fi fi-gb"></span>
-                                        <span v-else-if="result.lenguage == `zh`" class="fi fi-cn"></span>
-                                        <span v-else-if="result.lenguage == `ja`" class="fi fi-jp"></span>
-                                        <span v-else-if="result.lenguage == `kk`" class="fi fi-kz"></span>
-                                        <span v-else-if="result.lenguage == `da`" class="fi fi-dk"></span>
-                                        <span v-else-if="result.lenguage == `ko`" class="fi fi-kp"></span>
-                                        <span v-else-if="result.lenguage == null">{{ result.lenguage }}</span>
+                            <ul>
+                                <li>Titolo: {{ result.title }}</li>
+                                <li>Titolo originale: {{ result.originaTitle }}</li>
+                                <li>Lingua:
+                                    <span
+                                        v-if="result.lenguage != `en` && result.lenguage != `zh` && result.lenguage != `ja` && result.lenguage != `kk` && result.lenguage != `da` && result.lenguage != `ko`"
+                                        :class="`fi fi-${result.lenguage}`"></span>
+                                    <span v-else-if="result.lenguage == `en`" class="fi fi-gb"></span>
+                                    <span v-else-if="result.lenguage == `zh`" class="fi fi-cn"></span>
+                                    <span v-else-if="result.lenguage == `ja`" class="fi fi-jp"></span>
+                                    <span v-else-if="result.lenguage == `kk`" class="fi fi-kz"></span>
+                                    <span v-else-if="result.lenguage == `da`" class="fi fi-dk"></span>
+                                    <span v-else-if="result.lenguage == `ko`" class="fi fi-kp"></span>
+                                    <span v-else-if="result.lenguage == null">{{ result.lenguage }}</span>
 
-                                    </li>
-                                    <li>Categoria: {{ result.category }}</li>
-                                    <li>
-                                        Voto: {{ result.vote }}
-                                        <i v-for="star in starCalculator(result.vote)" :key="star"
-                                            class="fa-solid fa-star"></i>
-                                        <i v-for="emptyStar in 5 - starCalculator(result.vote)" :key="emptyStar"
-                                            class="fa-regular fa-star"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- /.card-content -->
-                        
+                                </li>
+                                <li>Categoria: {{ result.category }}</li>
+                                <li>
+                                    Voto: {{ result.vote }}
+                                    <i v-for="star in starCalculator(result.vote)" :key="star"
+                                        class="fa-solid fa-star"></i>
+                                    <i v-for="emptyStar in 5 - starCalculator(result.vote)" :key="emptyStar"
+                                        class="fa-regular fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.card-content -->
+
                     </div>
                     <!-- /.card -->
 
