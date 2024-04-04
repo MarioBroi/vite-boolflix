@@ -12,6 +12,7 @@
     --boolflix-avatar1: rgba(8, 99, 115, 1);
     --boolflix-danger: rgba(95, 14, 20, 1);
     --boolflix-limited_time: rgba(158, 183, 200, 1);
+    --boolflix-star: rgb(184, 166, 31);
 }
 
 body {
@@ -75,35 +76,66 @@ header {
             .card {
                 width: 300px;
                 height: 425px;
-                color: var(--boolflix-text);
                 border: 1px solid var(--boolflix-danger);
+                overflow: hidden;
 
-                & :hover {
-                    cursor: pointer;
-                    box-shadow: rgba(255, 254, 255, 0.585) 0px 2px 10px 0px;
+                & img {
+                    width: 300px;
+                    height: 425px;
+                    border-radius: 3px;
+
                 }
 
-                .image,
-                .card-content {
-                    width: 100%;
-                    height: 100%;
-                }
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                .img-nf {
+                    padding: 0.5em;
+                    color: var(--boolflix-text);
                 }
 
                 .card-content {
-                    padding: 1em;
-                    display: flex;
-                    flex-direction: column;
+                    width: 300px;
+                    height: 425px;
+                    padding: 0.5em;
+                    box-sizing: border-box;
+                    background: var(--boolflix-dark);
+                    color: var(--boolflix-text);
+                }
 
-                    & ul {
-                        list-style: none;
+                & ul {
+                    list-style: none;
+
+                    .title {
+                        font-size: 28px;
+                        padding: 0.2em;
                     }
+
+                    .original-title {
+                        font-size: 25px;
+                        padding: 0.15em;
+                    }
+
+                    .lenguage,
+                    .category,
+                    .vote {
+                        padding: 0.1em;
+                        font-size: 20px;
+                    }
+
+                    .vote i {
+                        padding: 1px;
+                        color: var(--boolflix-star);
+                    }
+
                 }
+
+            }
+
+            .card:hover {
+                cursor: pointer;
+                box-shadow: rgba(255, 254, 255, 0.585) 0px 2px 10px 0px;
+            }
+
+            .card:hover img {
+                display: none;
             }
 
         }
