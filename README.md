@@ -28,7 +28,7 @@
 - [x] Arrotondiamo sempre per eccesso all’unità successiva, non gestiamo icone mezze piene (o mezze vuote :P)
 
 ## Milestone 4:
-- Trasformiamo quello che abbiamo fatto fino ad ora in una vera e propria webapp, creando un layout completo simil-Netflix:
+- [x] Trasformiamo quello che abbiamo fatto fino ad ora in una vera e propria webapp, creando un layout completo simil-Netflix:
     - Un header che contiene logo e search bar
     - Dopo aver ricercato qualcosa nella searchbar, i risultati appaiono sotto forma di “card” in cui lo sfondo è rappresentato dall’immagine di copertina (consiglio la poster_path con w342)
     - Andando con il mouse sopra una card (on hover), appaiono le informazioni aggiuntive già prese nei punti precedenti più la overview
@@ -80,7 +80,7 @@
 - [x] We always round up to the next integer, we don't handle half-full (or half-empty :P) icons.
 
 ## Milestone 4:
-- Transform what we've done so far into a real web app, creating a complete layout similar to Netflix:
+- [x] Transform what we've done so far into a real web app, creating a complete layout similar to Netflix:
     - A header containing a logo and a search bar
     - After searching for something in the search bar, the results appear in the form of "cards" where the background is represented by the cover image (I recommend using the poster_path with w342)
     - Hovering over a card, additional information already retrieved in the previous points plus the overview appears
