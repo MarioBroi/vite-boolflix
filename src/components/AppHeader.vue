@@ -13,15 +13,23 @@ export default {
 
 <template>
 
-    <header class="app-header">
+    <header>
+        
+        <div class="app-header">
 
-        <h1>BOOLFLIX</h1>
+            <h1 class="logo">BOOLFLIX</h1>
+            <!-- /.logo -->
 
-        <input type="text" placeholder="Titoli, persone, generi" v-model="state.search">
-        <button @click="state.searchResult">Search</button>
+            <nav class="navbar">
+                <input type="text" placeholder="Titoli, persone, generi" v-model="state.search" class="search-text">
+                <button @click="state.searchResult" class="btn-search">Search</button>
+            </nav>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.app-header -->
 
     </header>
-    <!-- /.app-header -->
 
 </template>
 
