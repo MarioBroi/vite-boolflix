@@ -18,6 +18,9 @@
 body {
     padding-top: 60px;
     background-color: var(--boolflix-dark);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* #endregion Common */
@@ -64,7 +67,7 @@ header {
 
     .container {
         width: 90%;
-        margin: 0 auto;
+        margin: 1em auto;
 
         .row {
             display: flex;
@@ -105,19 +108,19 @@ header {
 
                     .title {
                         font-size: 28px;
-                        padding: 0.2em;
+                        padding: 0.2em 0;
                     }
 
                     .original-title {
                         font-size: 25px;
-                        padding: 0.15em;
+                        padding: 0.15em 0;
                     }
 
                     .lenguage,
                     .category,
                     .vote {
-                        padding: 0.1em;
                         font-size: 20px;
+                        padding: 0.1em 0;
                     }
 
                     .vote i {
